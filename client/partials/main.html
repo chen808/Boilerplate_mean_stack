@@ -1,1 +1,221 @@
-<h1>Hello!</h1>
+
+
+<div ng-controller="MeanController" id="container1">
+
+
+<!-- Top Nav Bar ============================================ -->
+		<nav align='center'>
+
+			<!-- Nav Bar Logo -->
+			<div id="main_top_logo">
+				<a href="#">
+					<img id='self_logo' height="70" >
+				</a>
+			</div>
+
+			<!-- Container for contact links -->
+			<div id='top_contact_links'>
+				<!-- Jump Links to part of page -->
+			    <ul class='jump_link'>
+					<li><a href="#container1">Home</a></li>
+					<li><a href="#container2">About Me</a></li>
+					<li><a href="#container3">Project</a></li>
+			    </ul>
+			</div>
+
+		    <!-- Contact Links -->
+		    <ul id="contact_links">
+		    	<li id='mail'><a href="mailto:chentiki808@gmail.com"><img src="images/contact_icons-01_mail.png" width='40' height='40'></a></li>
+		    	<li><a href="https://github.com/chen808" target="_blank"><img src="images/contact_icons-02_github.png" width='40' height='40'></a></li>
+		    	<li><a href="https://www.linkedin.com/in/davidc808" target="_blank"><img src="images/contact_icons-03_linkedin.png" width='40' height='40'></a></li>
+		    </ul>
+
+		</nav>
+	
+		<!-- Hero Image -->
+		<div class='container' align='center'>
+			<div class='selfLogo'></div>
+
+			<!-- <div class='logo' ></div> -->
+			<div class='foreground'></div>
+		</div><!-- end container -->
+
+
+
+
+		<!-- About Me Section ========================================================= -->
+		<div class='container2' name='container2' id="container2">
+
+			<div class='about_me' align="center">
+				<h1 align="center" class='aloha_font'>Aloha!</h1>
+				<h3 class='aloha_font'>I'm David</h3>
+				<h3 class='aloha_font'>A Front-End Developer</h3>
+				<h3 class='aloha_font'>A Graphic Artist</h3>
+				<h3 class='aloha_font'>A Curious Individual</h3>
+			</div>
+			<!-- Language Icons -->
+			<div id='language_container'>
+				<div class='languages_text' align='center'>
+					<h3 class='aloha_font'>Check out the skills I've<br>learned from Coding Dojo...</h3>
+				</div>
+
+				<div class='languages' align='center'>
+					<div class='img_row1'>
+						<img src="images/programming_logos_javascript.png" width='100' height:'100'>
+						<img src="images/programming_logos_ruby.png"  width='100' height:'100'>
+						<img src="images/programming_logos_rails.png"  width='100' height:'100'>
+					</div>
+
+					<div class='img_row2'>
+						<img src="images/programming_logos_html5.png" width='100' height:'100'>
+						<img src="images/programming_logos_css.png"  width='100' height:'100'>
+						<img src="images/programming_logos_jquery.png"  width='100' height:'100'>
+					</div>
+
+					<div class='img_row3'>
+						<img src="images/programming_logos_mysql.png" width='100' height:'100'>
+						<img src="images/programming_logos_github.png"  width='100' height:'100'>
+						<img src="images/programming_logos_python.png"  width='100' height:'100'>
+					</div>
+				</div>
+			</div>
+			<!-- white line (for design purpose) -->
+			<!-- <div class='white_line'></div> -->
+
+			<!-- Skills Section -->
+			<div id='skill_container'>
+				<!-- skills images -->
+				<div class='skill' align='center'>
+					<div class='img_row1'>
+						<img src="images/skill-01.jpg" width='100' height:'400'>
+						<img src="images/skill-02.jpg"  width='100' height:'400'>
+						<img src="images/skill-03.jpg"  width='100' height:'400'>
+					</div>
+				</div>
+				<div class='skill_text' align='center'>
+					<h3 class='aloha_font'>...to go along<br>with my art background</h3>
+					<h4>Psst! Check out my <a href="https://www.instagram.com/renzochigga/">Instagram</a><br>for more art stuff!</h4>
+				</div>
+			</div>
+
+		</div><!-- end container2 -->
+
+
+
+		<!-- Project Section ====================================================== -->
+		<div class='container3' name='container3' id="container3">
+
+			<h2 align='center' class='aloha_font_red'>Projects</h2>
+
+			<!-- Hashfighter Project -->
+			<div id='hashfighter_container'>
+				<video autoplay loop muted>
+					<source src="images/hashfighter_demo.mp4" type="video/mp4"  />
+					Your browser does not support HTML5 video.
+				</video>
+				<!-- Hashfighter Description -->
+				<div class='hashfighter_description'>
+					<h3 align='center' class='aloha_font_red'>"HashFighters"</h3>
+					<p align='center' class='battle_description'>Battles are dictated by Twitter hashtags. The first to 100 points wins the battle. The community offers color commentaries through incoming tweets.</p>
+
+					<a class='case_study_link' align='center' ng-click='hashfighter()'>See Case Study</a>
+
+					<p align='center' class='built_with'>Built with JavaScript, NodeJS, AngularJS, Express, Twitter Api, Adobe Illustrator, Adobe PhotoShop</p>
+					
+				</div>
+			</div>
+
+
+			<!-- Coding Nom Nom Project -->
+			<div id='hashfighter_container'>
+				<video autoplay loop muted>
+					<source src="images/codenomnom_demo.mp4" type="video/mp4"  />
+					Your browser does not support HTML5 video.
+				</video>
+				<!-- Hashfighter Description -->
+				<div class='hashfighter_description'>
+					<h3 align='center' class='aloha_font_red'>"Coding Nom Nom"</h3>
+					<p align='center' class='battle_description'>User is encouraged to write clear recipe-like instructions that attempts to solve a particular code issue.</p>
+
+
+
+					<a href="http://www.codingnomnom.com/" class='case_study_link' align='center' target="_blank">See Web Site</a>
+					
+					<p align='center' class='built_with'>Built with Ruby, Rails, Bootstrap, Adobe Illustrator</p>
+				</div>
+			</div>
+
+
+			<!-- No Worries Project -->
+			<div id='hashfighter_container'>
+				<video autoplay loop muted>
+					<source src="images/no_worries_demo.mp4" type="video/mp4"  />
+					Your browser does not support HTML5 video.
+				</video>
+				<!-- Hashfighter Description -->
+				<div class='hashfighter_description'>
+					<h3 align='center' class='aloha_font_red'>"No Worries"</h3>
+					<p align='center' class='battle_description'>User is encouraged to write clear recipe-like instructions that attempts to solve a particular code issue.</p>
+
+					<p align='center' class='built_with'>Built with Ruby, Rails, Bootstrap, Adobe Illustrator, Twilio Api, Action Mailer</p>
+
+					<!-- <a href="http://www.codingnomnom.com/" class='case_study_link' align='center' target="_blank">See Web Site</a> -->
+					
+				</div>
+			</div>
+
+
+
+			
+
+		</div><!-- end container3 -->
+
+
+		<!-- Call To Action Section ==================================================================== -->
+		<div id='container4'>
+
+			<div class='call_to_action'>
+
+				<h2 align='center' class='aloha_font'>Contact</h2>
+
+				<ul align='center' id='bottom_contact'>
+					<li><a href="mailto:chentiki808@gmail.com"><img src="images/contact_icons-01_mail.png" width='50' height='50'>Shoot me a email</a></li>
+					<li><a href="https://www.linkedin.com/in/davidc808" target="_blank"><img src="images/contact_icons-03_linkedin.png" width='50' height='50'>Connect wth me on LinkedIn</a></li>
+					<li><a href="https://www.instagram.com/renzochigga/" target="_blank"><img src="images/contact_icons-04_instagram.png" width='50' height='50'>Follow me on Instagram</a></li>
+					<li><a href="" data-toggle="modal" data-target="#myModal"><img src="images/resume_icon.png" width='45' height='45'>Download Resume</a></li>
+				</ul>
+				
+				<h2 align='center' class='aloha_font much_mahalo' id='much_mahalo'>Much Mahalo!</h2>
+
+			</div>
+
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+
+
+			      <div class="modal-body">
+			        <div style="text-align: center;">
+						<iframe src="images/David_Chen_Resume copy.pdf" 
+							style="width:100%; height:100%;">
+						</iframe>
+					</div>
+			      </div>
+
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+
+			<h6 align='center'>&copy Copyright 2016 Designed by David Chen in California</h6>
+		</div>
+
+
+
+
+</div>

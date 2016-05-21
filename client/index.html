@@ -1,6 +1,9 @@
 <html ng-app='myApp'>
 <head>
-	<title>Boilerplate_Mean Stack</title>
+	<title>David Chen Portfolio Site</title>
+
+
+
 
 	<!-- Angular CDN -->
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
@@ -12,6 +15,16 @@
     <!-- Jquery UI CDN -->
 	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+	<!-- Link to js file -->
+	<script src='js/functions.js'></script>
+
+	<!-- Link to access Angular Route Style (for CSS purpose) with route provider -->
+	<!-- *this is courtesy of 'tennisgent' angular-route-styles on github -->
+	<script src='js/route-styles.js'></script>
+
+
+
 
 
 
@@ -25,9 +38,27 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+
+	<!-- Link to style sheet -->
+	<link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+
+
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="stylesheet/animate.css">
+
+
+
+
+
+
+
 	<!-- Angular Code -->
 	<script type="text/javascript">
-		var myApp = angular.module('myApp',['ngRoute']);
+
+
+		var myApp = angular.module('myApp',['ngRoute', 'routeStyles']);
+
+
 
 		// ROUTES ===========================================
 		myApp.config(function ($routeProvider){
@@ -35,18 +66,34 @@
 			        .when('/',{
 			            templateUrl: 'partials/main.html'
 			        })
+			        .when('/hashfighter',{
+			            templateUrl: 'partials/hashfighter.html',
+			            css: 'stylesheet/style_case_hashfighter.css'
+			        })
 			        .otherwise({
 			          redirectTo: '/'
 			        });
 			});
 
 		// FACTORY ==========================================
-		myApp.factory('MeanFactory', function(){
+		myApp.factory('MeanFactory', function($http){
+			var factory = {};
+
+
+
+			return factory;
+
 
 		});
 
 		// CONTROLLER =======================================
-		myApp.controller('MeanController', function($scope, MeanController){
+		myApp.controller('MeanController', function($scope, MeanFactory, $location){
+
+			$scope.hashfighter = function(){
+				console.log("omg it works");
+				var location = "/hashfighter";
+				$location.path(location);
+			}
 
 		});
 
