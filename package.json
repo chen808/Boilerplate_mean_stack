@@ -5,6 +5,28 @@
     "mongoose": "^4.4.11"
   },
   "engines": {
-  	"node": "5.8.0"
+    "node": "5.8.0"
   },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "portfolio_website",
+  "version": "1.0.0",
+  "description": "Attempting to deploy portoflio websirte",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chen808/Boilerplate_mean_stack.git"
+  },
+  "keywords": [
+    "portfolio",
+    "website"
+  ],
+  "author": "David Chen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chen808/Boilerplate_mean_stack/issues"
+  },
+  "homepage": "https://github.com/chen808/Boilerplate_mean_stack#readme"
 }
