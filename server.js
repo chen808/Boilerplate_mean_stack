@@ -10,7 +10,7 @@ var path = require('path');
 var app = express();
 
 // the following is for HEROKU setup
-app.set('port', (process.env.PORT || 5000));
+// app.set('port', (process.env.PORT || 5000))
 
 
 // require body-parser
@@ -35,7 +35,6 @@ app.get('/', function(request, response){
 
 // // set up static file server
 app.use(express.static(path.join(__dirname,'./client')));
-
 app.listen(8000, function(){
 	console.log('Batman is listening on port 8000');
 });
