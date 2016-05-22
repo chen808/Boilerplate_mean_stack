@@ -3,14 +3,14 @@
 
 
 /* The @media is only if the screen is less then 480px wide */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 414px) {
 
 	#container1 nav {
-		width: 480px;
+		width: 414px;
 	}
 
-	#main_top_logo {
-		margin-left: -50px;
+	nav #main_top_logo {
+		margin-left: 10px;
 	}
 
 	#top_contact_links ul.jump_link {
@@ -19,9 +19,16 @@
 
 
 	.container .selfLogo {
-		background-size: 400px;
-		width: 440px;
+		background-size: 300px;
+		width: 320px;
+		margin-left: -80px;
 	}
+
+	nav ul#contact_links {
+		margin-right: 80px;
+	}
+
+
 
 
 	#language_container {
@@ -43,58 +50,101 @@
 	}
 
 	#container2 {
-		height: 1800px;
+		height: 1400px;
+	}
+
+	#container2 .about_me {
+		margin-left: -30px;
+	}
+
+	#container2 #language_container{
+		margin-left: -65px;
+	}
+
+	#container2 #language_container h3.aloha_font {
+		font-size: 1.5em;
+		margin-left: 10px;
 	}
 
 	#container2 #skill_container {
-		width: 480px;
+		width: 414px;
 		/*border: 1px solid white;*/
 	}
 			#skill_container .skill {
 				/*border: 1px solid blue;*/
-				width: 400px;
-				margin-left: 25px;
+				/*width: 300px;
+				margin-left: -25px;*/
+				display: none;
 			}
 
 			#skill_container h3 {
 				/*border: 1px solid blue;*/
-				margin-left: 25px;
+				font-size: 1.5em;
+				margin-left: -100px;
 			}
 
 			#skill_container h4 {
 				/*border: 1px solid blue;*/
-				margin-left: 35px;
+				margin-left: -100px;
 			}
 
 
 	#container3 {
-		width: 480px;
-		height: 1900px;
+		width: 414px;
+		height: 1700px;
 		background-color: white;
 	}
+		#container3 h2 {
+			margin-left: -70px;
+		}
+
+		#container3 h3 {
+			margin-left: -50px;
+		}  
+
 
 		#hashfighter_container video {
-			width: 50% !important;
+			width: 35% !important;
 			margin-left: 15px;
 		}
 
 		#hashfighter_container p {
-			width: 350px;
-			margin: 0 auto;
+			width: 300px;
+			margin-left: 25px;
 		}
 
 		#hashfighter_container .hashfighter_description {
 			/*border: 1px solid white;*/
-			width: 460px;
-			margin-left: 10px;
+			width: 414px;
+			margin-left: -5px;
+		}
+
+		#hashfighter_container a.case_study_link {
+			margin-left: 80px;
 		}
 
 
 	#container4 {
-		width: 480px;
+		width: 414px;
 	}
-		#container4 #bottom_contact {
-			width: 480px;
+		#container4 .call_to_action h2{
+			font-size: 2.5em;
+			margin-left: -70px;
+		}
+
+		#container4 ul#bottom_contact {
+			width: 350px;
+			padding-left: -40px;
+			/*border: 1px solid white;*/
+		}
+
+		#container4 ul#bottom_contact li{
+			margin-left: -115px;
+			font-size: 1em;
+		}
+
+		#container4 h6{
+			margin-left: -80px;
 		}
 
 
