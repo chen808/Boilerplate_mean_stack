@@ -2,7 +2,7 @@
 <head>
 	<title>David Chen Portfolio Site</title>
 
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 	<!-- Angular CDN -->
@@ -24,7 +24,8 @@
 	<script src='js/route-styles.js'></script>
 
 
-
+	<!-- Angular-Scroll CDN -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/1.0.0/angular-scroll.js"></script>
 
 
 
@@ -56,7 +57,11 @@
 	<script type="text/javascript">
 
 
-		var myApp = angular.module('myApp',['ngRoute', 'routeStyles']);
+		var myApp = angular.module('myApp',['ngRoute', 'routeStyles', 'duScroll']);
+
+
+
+
 
 
 
@@ -75,6 +80,9 @@
 			        });
 			});
 
+
+
+
 		// FACTORY ==========================================
 		myApp.factory('MeanFactory', function($http){
 			var factory = {};
@@ -87,7 +95,7 @@
 		});
 
 		// CONTROLLER =======================================
-		myApp.controller('MeanController', function($scope, MeanFactory, $location){
+		myApp.controller('MeanController', function($scope, MeanFactory, $location, $document){
 
 			$scope.hashfighter = function(){
 				console.log("omg it works");
@@ -95,7 +103,16 @@
 				$location.path(location);
 			}
 
-		});
+
+    $scope.toTheTop = function() {
+      $document.scrollTopAnimated(0, 5000).then(function() {
+        console && console.log('You just scrolled to the top!');
+      });
+    }
+
+
+
+		}); // end MeanController
 
 	</script>
 
