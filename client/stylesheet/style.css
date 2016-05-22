@@ -10,7 +10,7 @@
 	}
 
 	nav #main_top_logo {
-		margin-left: 10px;
+		margin-left: 20px;
 	}
 
 	#top_contact_links ul.jump_link {
@@ -19,13 +19,13 @@
 
 
 	.container .selfLogo {
-		background-size: 300px;
-		width: 320px;
-		margin-left: -80px;
+		background-size: 320px;
+		width: 380px;
+		margin-left: -20px;
 	}
 
 	nav ul#contact_links {
-		margin-right: 80px;
+		margin-right: 30px;
 	}
 
 
@@ -37,7 +37,7 @@
 
 	#language_container .languages_text h3 {
 		/*border: 1px solid black;*/
-		margin-left: 10px;
+		margin-right: -80px;
 		display: block;
 	}
 
@@ -45,7 +45,7 @@
 		/*border: 1px solid white;*/
 		width: 400px;
 		display: block;
-		margin-left: 30px;
+		margin-left: 70px;
 		margin-top: -30px;
 	}
 
@@ -54,7 +54,7 @@
 	}
 
 	#container2 .about_me {
-		margin-left: -30px;
+		margin-left: 0px;
 	}
 
 	#container2 #language_container{
@@ -80,37 +80,37 @@
 			#skill_container h3 {
 				/*border: 1px solid blue;*/
 				font-size: 1.5em;
-				margin-left: -100px;
+				margin-left: -35px;
 			}
 
 			#skill_container h4 {
 				/*border: 1px solid blue;*/
-				margin-left: -100px;
+				margin-left: -40px;
 			}
 
 
 	#container3 {
 		width: 414px;
-		height: 1700px;
+		height: 1800px;
 		background-color: white;
 	}
 		#container3 h2 {
-			margin-left: -70px;
+			margin-left: -10px;
 		}
 
 		#container3 h3 {
-			margin-left: -50px;
+			margin-left: 10px;
 		}  
 
 
 		#hashfighter_container video {
-			width: 35% !important;
-			margin-left: 15px;
+			width: 40% !important;
+			margin-left: 20px;
 		}
 
 		#hashfighter_container p {
 			width: 300px;
-			margin-left: 25px;
+			margin-left: 50px;
 		}
 
 		#hashfighter_container .hashfighter_description {
@@ -120,7 +120,7 @@
 		}
 
 		#hashfighter_container a.case_study_link {
-			margin-left: 80px;
+			margin-left: 100px;
 		}
 
 
@@ -129,7 +129,7 @@
 	}
 		#container4 .call_to_action h2{
 			font-size: 2.5em;
-			margin-left: -70px;
+			margin-left: -10px;
 		}
 
 		#container4 ul#bottom_contact {
@@ -139,12 +139,12 @@
 		}
 
 		#container4 ul#bottom_contact li{
-			margin-left: -115px;
+			margin-left: -85px;
 			font-size: 1em;
 		}
 
 		#container4 h6{
-			margin-left: -80px;
+			margin-left: -10px;
 		}
 
 
